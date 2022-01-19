@@ -4,7 +4,15 @@
 /node_modules
 /.pnp
 .pnp.js
+# IntelliJ project files
 .idea
+.idea/*.xml
+*.iml
+out
+gen
+build
+rebel.xml
+
 
 # testing
 /coverage
