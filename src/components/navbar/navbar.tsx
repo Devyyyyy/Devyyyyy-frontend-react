@@ -12,7 +12,7 @@ export default function Navbar() {
                 </NavLink>
                 <Bars/>
                 <NavMenu>
-                    <NavLink to="/dev">
+                    <NavLink to="/devFinder">
                         데브매칭
                     </NavLink>
                     <NavLink to="/community">
