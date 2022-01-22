@@ -1,5 +1,7 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from "./navbarElements";
+import { IoSettingsSharp } from "react-icons/io5";
+import { FiLogIn } from "react-icons/fi";
 
 export default function Navbar() {
     return (
@@ -10,23 +12,25 @@ export default function Navbar() {
                 </NavLink>
                 <Bars/>
                 <NavMenu>
-                    <NavLink to="/dev" activeStyle>
+                    <NavLink to="/dev">
                         데브매칭
                     </NavLink>
-                    <NavLink to="/community" activeStyle>
+                    <NavLink to="/community">
                         커뮤니티
                     </NavLink>
-                    <NavLink to="/study" activeStyle>
+                    <NavLink to="/study">
                         스터디
                     </NavLink>
+                    <NavBtn>
+                        <NavBtnLink to="/signin">
+                            {FiLogIn}
+                        </NavBtnLink>
+                        <NavBtnLink to="/settings">
+                            {IoSettingsSharp}
+                        </NavBtnLink>
+                    </NavBtn>
                 </NavMenu>
-                <Bars />
-                <NavLink to="/profile">
-                    <h1>프로필</h1>
-                </NavLink>
-                <NavLink to="/settings">
-                    <h1>설정</h1>
-                </NavLink>
+                <Bars/>
             </Nav>
         </div>
     );
