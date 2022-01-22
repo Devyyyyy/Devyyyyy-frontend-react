@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from "./navbarElements";
+import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, Logo} from "./navbarElements";
 import { IoSettingsSharp } from "react-icons/io5";
 import { FiLogIn } from "react-icons/fi";
 
@@ -8,7 +8,7 @@ export default function Navbar() {
         <div>
             <Nav>
                 <NavLink to="/">
-                    <h1>Logo</h1>
+                    <Logo src={require("../../assets/images/logo.png")}/>
                 </NavLink>
                 <Bars/>
                 <NavMenu>

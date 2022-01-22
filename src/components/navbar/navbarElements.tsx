@@ -2,6 +2,10 @@ import styled from "styled-components";
 import {NavLink as Link} from 'react-router-dom';
 import {FaBars} from 'react-icons/fa';
 
+
+
+
+
 export const Nav = styled.nav`
   background: white;
   height: 80px;
@@ -10,7 +14,14 @@ export const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
   outline-color: black;
+  position: sticky;
+  top: 0;
 `
+
+export const Logo = styled.img`
+  width: auto;
+  height: 50px;
+`;
 
 export const NavLink = styled(Link)`
   color: black;
