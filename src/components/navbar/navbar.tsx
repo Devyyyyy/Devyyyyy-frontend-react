@@ -13,10 +13,10 @@ export default function Navbar() {
                 <Bars/>
                 <NavMenu>
                     <NavLink to="/devFinder">
-                        데브파인더
+                        데비파인더
                     </NavLink>
-                    <NavLink to="/community">
-                        커뮤니티
+                    <NavLink to="/channel">
+                        채널
                     </NavLink>
                     <NavLink to="/techBlog">
                         기술블로그
