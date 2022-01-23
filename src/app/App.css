@@ -1,6 +1,10 @@
+
+
 .App {
   text-align: center;
+  margin-top: 50px;
   font-family: "ChosunGu";
+  background-color: #F5F5F5;
 }
 
 @font-face {
